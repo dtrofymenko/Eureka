@@ -384,7 +384,9 @@ extension Section /* Condition */{
     func hide(row: BaseRow) {
         row.baseCell.cellResignFirstResponder()
         (row as? BaseInlineRowType)?.collapseInlineRow()
+        row.willHide()
         kvoWrapper.rows.remove(row)
+        row.didHide(section: self)
     }
 
     func show(row: BaseRow) {
@@ -396,7 +398,9 @@ extension Section /* Condition */{
             let previous = kvoWrapper._allRows[index]
             formIndex = kvoWrapper.rows.index(of: previous)
         }
+        row.willShow(section: self)
         kvoWrapper.rows.insert(row, at: formIndex == NSNotFound ? 0 : formIndex + 1)
+        row.didShow()
     }
 }
 

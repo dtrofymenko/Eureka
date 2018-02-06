@@ -136,6 +136,13 @@ open class BaseRow: BaseRowType {
     }
 
     var hiddenCache = false
+
+    open func willHide() {}
+    open func didHide(section: Section) {}
+
+    open func willShow(section: Section) {}
+    open func didShow() {}
+
     var disabledCache = false {
         willSet {
             if newValue && !disabledCache {

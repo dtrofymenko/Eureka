@@ -87,6 +87,10 @@ open class RowOf<T>: BaseRow where T: Equatable{
         return validationErrors
     }
 
+    public func clearValidation() {
+       validationErrors = []
+    }
+
     /// Add a Validation rule for the Row
     /// - Parameter rule: RuleType object to add
     public func add<Rule: RuleType>(rule: Rule) where T == Rule.RowValueType {
