@@ -22,7 +22,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-import Foundation
+import UIKit
 
 /**
  *  Every row that shall be used in a SelectableSection must conform to this protocol.

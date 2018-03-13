@@ -22,7 +22,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-import Foundation
+import UIKit
 
 open class _MultipleSelectorRow<T, Cell: CellType>: GenericMultipleSelectorRow<T, Cell> where Cell: BaseCell, Cell.Value == Set<T> {
     public required init(tag: String?) {

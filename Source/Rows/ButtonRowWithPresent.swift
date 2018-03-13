@@ -22,7 +22,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-import Foundation
+import UIKit
 
 open class _ButtonRowWithPresent<VCType: TypedRowControllerType>: Row<ButtonCellOf<VCType.RowValue>>, PresenterRowType where VCType: UIViewController {
 

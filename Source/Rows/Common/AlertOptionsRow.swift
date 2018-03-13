@@ -23,10 +23,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-import Foundation
-
-
-import Foundation
+import UIKit
 
 open class AlertOptionsRow<Cell: CellType> : OptionsRow<Cell>, AlertOptionsProviderRow where Cell: BaseCell {
 

@@ -6,7 +6,7 @@
 //  Copyright © 2017 Xmartlabs. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public typealias SwipeActionHandler = (SwipeAction, BaseRow, ((Bool) -> Void)?) -> Void
 

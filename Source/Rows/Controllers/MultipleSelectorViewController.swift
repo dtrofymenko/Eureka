@@ -22,7 +22,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-import Foundation
+import UIKit
 
 /// Selector Controller that enables multiple selection
 open class _MultipleSelectorViewController<Row: SelectableRowType, OptionsRow: OptionsProviderRow> : FormViewController, TypedRowControllerType where Row: BaseRow, Row.Cell.Value == OptionsRow.OptionsProviderType.Option, OptionsRow.OptionsProviderType.Option: Hashable {
